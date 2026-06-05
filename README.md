@@ -1,19 +1,19 @@
-# 📄 Currículo Profissional Online
+# Currículo Profissional Online
 
 Currículo online responsivo desenvolvido em **HTML5** e **CSS3 moderno**, com design profissional, acessibilidade e suporte completo para dispositivos móveis.
 
-## 🎯 Características
+## Características
 
-- ✅ **Design Responsivo** - Funciona perfeitamente em desktop, tablet e celular
-- ✅ **CSS Moderno** - Utiliza Flexbox e Grid
-- ✅ **Cores Neutras** - Paleta profissional e moderna
-- ✅ **Tipografia Profissional** - System fonts otimizadas
-- ✅ **Animações Suaves** - Transições e efeitos elegantes
-- ✅ **Media Queries** - 5 breakpoints para diferentes tamanhos de tela
-- ✅ **Print-Friendly** - Otimizado para impressão
-- ✅ **Acessível** - Semântica HTML5 adequada
+-  **Design Responsivo** - Funciona perfeitamente em desktop, tablet e celular
+-  **CSS Moderno** - Utiliza Flexbox e Grid
+-  **Cores Neutras** - Paleta profissional e moderna
+-  **Tipografia Profissional** - System fonts otimizadas
+-  **Animações Suaves** - Transições e efeitos elegantes
+-  **Media Queries** - 5 breakpoints para diferentes tamanhos de tela
+-  **Print-Friendly** - Otimizado para impressão
+-  **Acessível** - Semântica HTML5 adequada
 
-## 📱 Breakpoints de Responsividade
+##  Breakpoints de Responsividade
 
 | Dispositivo | Largura | Descrição |
 |---|---|---|
@@ -22,7 +22,7 @@ Currículo online responsivo desenvolvido em **HTML5** e **CSS3 moderno**, com d
 | Celular | 320 - 640px | Stack vertical |
 | Celular Pequeno | ≤ 375px | Ajustes finos para telas pequenas |
 
-## 🎨 Paleta de Cores
+##  Paleta de Cores
 
 ```css
 --primary-dark: #2c3e50    /* Cinza escuro */
@@ -32,7 +32,7 @@ Currículo online responsivo desenvolvido em **HTML5** e **CSS3 moderno**, com d
 --neutral-text-light: #718096  /* Texto secundário */
 ```
 
-## 📂 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```
 trabalho_pratico/
@@ -41,7 +41,7 @@ trabalho_pratico/
 └── README.md           # Este arquivo
 ```
 
-## 🚀 Como Usar
+## Como Usar
 
 1. Clone o repositório:
 ```bash
@@ -54,7 +54,7 @@ git clone https://github.com/FenandoCruz/trabalho_pratico.git
    - Modifique o HTML em `curriculo.html`
    - Ajuste cores/estilos em `style.css`
 
-## 💡 Personalizações Fáceis
+## Personalizações Fáceis
 
 No arquivo `style.css`, você pode facilmente customizar:
 
@@ -66,39 +66,39 @@ No arquivo `style.css`, você pode facilmente customizar:
 }
 ```
 
-## 📖 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Flexbox, Grid, Media Queries
 - **JavaScript** (opcional) - Para interatividades futuras
 
-## 🖨️ Impressão
+## Impressão
 
 O currículo foi otimizado para impressão. Basta pressionar `Ctrl + P` no navegador e imprimir como PDF.
 
-## 📝 Seções Incluídas
+## Seções Incluídas
 
-- 👤 Informações Pessoais e Contato
-- 📚 Formação Acadêmica
-- 💼 Experiências Profissionais
-- 🛠️ Habilidades Técnicas
-- 🌐 Links de Contato (Email, LinkedIn, GitHub)
+-  Informações Pessoais e Contato
+-  Formação Acadêmica
+-  Experiências Profissionais
+-  Habilidades Técnicas
+-  Links de Contato (Email, LinkedIn, GitHub)
 
-## ✨ Recursos Avançados
+## Recursos Avançados
 
 - **Efeitos Hover** - Cards com elevação e sombra
 - **Gradientes** - Fundo com gradiente sutil
 - **Variáveis CSS** - Fácil manutenção e customização
 - **Performance** - CSS otimizado, sem dependências externas
 
-## 👨‍💻 Autor
+## Autor
 
 **Fernando da Cruz Silva**
-- 📧 Email: [f74cruz@gmail.com](mailto:f74cruz@gmail.com)
-- 🔗 LinkedIn: [fernando-da-cruz-silva](https://www.linkedin.com/in/fernando-da-cruz-silva-8bb728329/)
-- 🐙 GitHub: [@FenandoCruz](https://github.com/FenandoCruz)
+- Email: [f74cruz@gmail.com](mailto:f74cruz@gmail.com)
+- LinkedIn: [fernando-da-cruz-silva](https://www.linkedin.com/in/fernando-da-cruz-silva-8bb728329/)
+- GitHub: [@FenandoCruz](https://github.com/FenandoCruz)
 
-## 📄 Licença
+## Licença
 
 Este projeto é de uso pessoal. Sinta-se livre para adaptar e customizar conforme necessário.
 
