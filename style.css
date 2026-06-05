@@ -1,0 +1,503 @@
+/* ============================================
+   VARIÁVEIS DE COR E TIPOGRAFIA
+   ============================================ */
+:root {
+    --primary-dark: #2c3e50;
+    --primary-light: #3498db;
+    --neutral-bg: #f5f7fa;
+    --neutral-card: #ffffff;
+    --neutral-text: #2d3748;
+    --neutral-text-light: #718096;
+    --neutral-border: #e2e8f0;
+    --accent-blue: #3498db;
+    --accent-hover: #2980b9;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* ============================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    color: var(--neutral-text);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ============================================
+   CONTAINER PRINCIPAL (GRID)
+   ============================================ */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--neutral-card);
+    padding: 60px 50px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* ============================================
+   HEADER / INFORMAÇÕES PESSOAIS
+   ============================================ */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--primary-light);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    letter-spacing: -0.5px;
+}
+
+.info-pessoal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+.info-pessoal p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    color: var(--neutral-text-light);
+    line-height: 1.5;
+}
+
+.info-pessoal strong {
+    color: var(--neutral-text);
+    font-weight: 600;
+}
+
+.info-pessoal a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+    padding-bottom: 2px;
+}
+
+.info-pessoal a:hover {
+    border-bottom-color: var(--accent-blue);
+    color: var(--accent-hover);
+}
+
+/* Separador visual para informações de contato */
+.info-pessoal p::after {
+    content: '';
+    flex-basis: 100%;
+    height: 0;
+}
+
+header > p {
+    color: var(--neutral-text-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    background-color: var(--neutral-bg);
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 4px;
+}
+
+/* ============================================
+   SEÇÕES (GRID LAYOUT)
+   ============================================ */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    border-left: 5px solid var(--accent-blue);
+    padding-left: 16px;
+    letter-spacing: -0.3px;
+}
+
+/* ============================================
+   ARTIGOS / CARDS (FLEXBOX)
+   ============================================ */
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: var(--neutral-bg);
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-blue);
+    transition: var(--transition);
+}
+
+article:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    background-color: #fafbfc;
+}
+
+article h3 {
+    color: var(--primary-dark);
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.instituicao {
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.periodo {
+    color: var(--neutral-text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+article p {
+    color: var(--neutral-text-light);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+article ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 24px;
+    margin-top: 8px;
+}
+
+article li {
+    color: var(--neutral-text-light);
+    line-height: 1.6;
+}
+
+/* ============================================
+   SKILLS CONTAINER (FLEXBOX)
+   ============================================ */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-hover) 100%);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: default;
+    box-shadow: var(--shadow-sm);
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.3);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 30px;
+    border-top: 2px solid var(--neutral-border);
+    color: var(--neutral-text-light);
+    font-size: 0.9rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    article:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* ============================================
+   MEDIA QUERIES - TABLET (769px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    .container {
+        padding: 50px 40px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ============================================
+   MEDIA QUERIES - TABLET (641px - 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 40px 25px;
+        border-radius: 6px;
+    }
+
+    header {
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header > p {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .info-pessoal {
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .info-pessoal p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+        padding-left: 12px;
+    }
+
+    article {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    article h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills-container {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .skill {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        gap: 10px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERIES - CELULAR (320px - 640px)
+   ============================================ */
+@media (max-width: 640px) {
+    body {
+        padding: 10px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    }
+
+    .container {
+        padding: 30px 18px;
+        gap: 30px;
+        border-radius: 6px;
+    }
+
+    header {
+        gap: 18px;
+        padding-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    header > p {
+        font-size: 0.85rem;
+        padding: 12px;
+        line-height: 1.7;
+    }
+
+    .info-pessoal {
+        font-size: 0.85rem;
+        gap: 8px;
+    }
+
+    .info-pessoal p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .info-pessoal a {
+        display: block;
+        margin: 4px 0;
+    }
+
+    section {
+        gap: 15px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+        padding-left: 10px;
+        border-left-width: 4px;
+    }
+
+    article {
+        padding: 14px;
+        gap: 8px;
+        border-radius: 4px;
+    }
+
+    article h3 {
+        font-size: 1.1rem;
+    }
+
+    .instituicao {
+        font-size: 0.9rem;
+    }
+
+    .periodo {
+        font-size: 0.85rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    article ul {
+        margin-left: 18px;
+        gap: 6px;
+    }
+
+    article li {
+        font-size: 0.9rem;
+    }
+
+    .skills-container {
+        gap: 8px;
+        justify-content: flex-start;
+    }
+
+    .skill {
+        padding: 7px 12px;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        gap: 8px;
+        padding-top: 20px;
+    }
+
+    footer p {
+        line-height: 1.5;
+    }
+}
+
+/* ============================================
+   MEDIA QUERIES - CELULARES PEQUENOS (até 375px)
+   ============================================ */
+@media (max-width: 375px) {
+    .container {
+        padding: 25px 14px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header > p {
+        font-size: 0.8rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    article h3 {
+        font-size: 1rem;
+    }
+
+    article {
+        padding: 12px;
+    }
+}
