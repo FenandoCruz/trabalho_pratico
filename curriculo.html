@@ -6,6 +6,7 @@
     <meta name="description" content="Currículo online profissional">
     <title>Currículo de Fernando da Cruz Silva</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -18,12 +19,15 @@
                     <strong><Email:f74cruz></Email:f74cruz></strong> <a href="mailto:f74cruz@gmail.com">f74cruz@gmail.com</a>
                 </p>
                 <p>
-                    <strong>Endereço:</strong> Rua Nova, 112 - Vila Garrido [Vila Velha, ES] |
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fernando-da-cruz-silva-8bb728329/" target="_blank">linkedin.com/in/fernando-da-cruz-silva-8bb728329/</a>
+                    <strong>Endereço:</strong> Rua Nova, 112 - Vila Garrido [Vila Velha, ES]
                 </p>
-                <p>
-                    <strong>Portfólio:</strong> <a href="https://github.com/FenandoCruz" target="_blank">github.com/FenandoCruz</a> |
-                    <strong>GitHub:</strong> <a href="https://github.com/FenandoCruz" target="_blank">github.com/FenandoCruz</a>
+                <p class="social-icons">
+                    <a href="https://www.linkedin.com/in/fernando-da-cruz-silva-8bb728329/" target="_blank" class="icon-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/FenandoCruz" target="_blank" class="icon-link github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </p>
             </div>
             <p>
@@ -36,8 +40,14 @@ Em paralelo, está cursando Análise e Desenvolvimento de Sistemas (ADS) na Est�
         </header>
 
         <!-- FORMAÇÃO ACADÊMICA -->
-        <section>
-            <h2>📚 Formação Acadêmica</h2>
+        <section class="collapsible open">
+            <div class="section-header">
+                <h2>📚 Formação Académica</h2>
+                <button class="toggle-btn" title="Expandir/Ocultar">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="section-content">
 
             <article>
                 <h3>[Graduação/Diploma]</h3>
@@ -66,11 +76,18 @@ Em paralelo, está cursando Análise e Desenvolvimento de Sistemas (ADS) na Est�
                     Descrição da certificação e seu impacto na carreira profissional.
                 </p>
             </article>
+            </div>
         </section>
 
-        <!-- EXPERIÊNCIAS E PROJETOS -->
-        <section>
-            <h2>💼 Experiências Profissionais & Projetos</h2>
+        <!-- EXPERIÈNCIAS E PROJETOS -->
+        <section class="collapsible open">
+            <div class="section-header">
+                <h2>💼 Experiências Profissionais & Projetos</h2>
+                <button class="toggle-btn" title="Expandir/Ocultar">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="section-content">
 
             <article>
                 <h3>[Seu Cargo/Posição Atual ou Mais Recente]</h3>
@@ -105,11 +122,18 @@ Em paralelo, está cursando Análise e Desenvolvimento de Sistemas (ADS) na Est�
                     [Inclua links para repositórios, demonstrações ou portfólio se aplicável]
                 </p>
             </article>
+            </div>
         </section>
 
         <!-- HABILIDADES -->
-        <section>
-            <h2>🛠️ Habilidades</h2>
+        <section class="collapsible open">
+            <div class="section-header">
+                <h2>🛠️ Habilidades</h2>
+                <button class="toggle-btn" title="Expandir/Ocultar">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="section-content">
 
             <article>
                 <h3>Linguagens de Programação</h3>
@@ -160,8 +184,7 @@ Em paralelo, está cursando Análise e Desenvolvimento de Sistemas (ADS) na Est�
                     <span class="skill">[Inglês - Nível]</span>
                     <span class="skill">[Outro Idioma - Nível]</span>
                 </div>
-            </article>
-        </section>
+            </article>            </div>        </section>
 
         <!-- RODAPÉ -->
         <footer>
@@ -169,5 +192,6 @@ Em paralelo, está cursando Análise e Desenvolvimento de Sistemas (ADS) na Est�
             <p>Este currículo foi gerado em HTML5 semântico e é responsivo para dispositivos móveis.</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

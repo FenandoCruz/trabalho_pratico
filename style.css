@@ -137,6 +137,23 @@ section {
     gap: 20px;
 }
 
+/* Seções coláveis com animação */
+section.collapsible {
+    overflow: hidden;
+}
+
+section.collapsible .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+section.collapsible h2 {
+    flex: 1;
+    margin: 0;
+}
+
 section h2 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -144,6 +161,60 @@ section h2 {
     border-left: 5px solid var(--accent-blue);
     padding-left: 16px;
     letter-spacing: -0.3px;
+}
+
+/* Conteúdo da seção com animação */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 100000px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    padding: 0;
+}
+
+section.collapsible:not(.open) .section-content {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+/* ============================================
+   BOTÃO DE TOGGLE
+   ============================================ */
+.toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.toggle-btn:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+.toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.toggle-btn i {
+    display: block;
+    transition: transform 0.4s ease;
+    transform: rotate(0deg);
 }
 
 /* ============================================
@@ -253,6 +324,61 @@ footer p {
 }
 
 /* ============================================
+   ÍCONES SOCIAIS
+   ============================================ */
+.social-icons {
+    display: flex !important;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 8px !important;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    color: white !important;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.icon-link:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.3);
+}
+
+.icon-link i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Cores específicas para cada rede social */
+.icon-link.linkedin {
+    background-color: #0A66C2;
+}
+
+.icon-link.linkedin:hover {
+    background-color: #084B9A;
+}
+
+.icon-link.github {
+    background-color: #333333;
+}
+
+.icon-link.github:hover {
+    background-color: #1a1a1a;
+}
+
+/* ============================================
    PRINT STYLES
    ============================================ */
 @media print {
@@ -292,6 +418,12 @@ footer p {
 
     section h2 {
         font-size: 1.6rem;
+    }
+
+    .toggle-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 0.95rem;
     }
 }
 
@@ -344,6 +476,17 @@ footer p {
 
     article h3 {
         font-size: 1.2rem;
+    }
+
+    .section-header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .toggle-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
     }
 
     .skills-container {
@@ -409,6 +552,21 @@ footer p {
         margin: 4px 0;
     }
 
+    .social-icons {
+        gap: 12px;
+        margin-top: 12px !important;
+    }
+
+    .icon-link {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+    }
+
+    .icon-link i {
+        font-size: 1.3rem;
+    }
+
     section {
         gap: 15px;
     }
@@ -427,6 +585,17 @@ footer p {
 
     article h3 {
         font-size: 1.1rem;
+    }
+
+    .section-header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .toggle-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
     }
 
     .instituicao {
@@ -499,5 +668,29 @@ footer p {
 
     article {
         padding: 12px;
+    }
+
+    .section-header {
+        gap: 8px;
+    }
+
+    .toggle-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .icon-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .icon-link i {
+        font-size: 1.2rem;
     }
 }
