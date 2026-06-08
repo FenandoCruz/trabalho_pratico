@@ -1,14 +1,14 @@
 # Currículo Profissional Online
 
-Currículo online responsivo desenvolvido em **HTML5** e **CSS3 moderno**, com design profissional, acessibilidade e suporte completo para dispositivos móveis.
+Currículo online responsivo desenvolvido em **HTML5** - **CSS** e **PHP**, com design profissional, acessibilidade e suporte completo para dispositivos móveis.
 
 ## Características
 
 -  **Design Responsivo** - Funciona perfeitamente em desktop, tablet e celular
--  **CSS Moderno** - Utiliza Flexbox e Grid
--  **Cores Neutras** - Paleta profissional e moderna
--  **Tipografia Profissional** - System fonts otimizadas
--  **Animações Suaves** - Transições e efeitos elegantes
+-  **CSS** - Utiliza Flexbox e Grid
+-  **Cores Neutras** - Paleta com cores neutras
+-  **Tipografia** - Otimizadas
+-  **Animações Suaves** - Transições e efeitos
 -  **Media Queries** - 5 breakpoints para diferentes tamanhos de tela
 -  **Print-Friendly** - Otimizado para impressão
 -  **Acessível** - Semântica HTML5 adequada
@@ -38,6 +38,8 @@ Currículo online responsivo desenvolvido em **HTML5** e **CSS3 moderno**, com d
 trabalho_pratico/
 ├── curriculo.html       # Estrutura HTML5
 ├── style.css           # Estilos externos
+├── javascript.js        # Interatividade e animações
+├── php.php              # Banco de dados
 └── README.md           # Este arquivo
 ```
 
@@ -70,7 +72,8 @@ No arquivo `style.css`, você pode facilmente customizar:
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Flexbox, Grid, Media Queries
-- **JavaScript** (opcional) - Para interatividades futuras
+- **JavaScript** - Para interatividades futuras
+- **PHP** - Banco de dados
 
 ## Impressão
 
