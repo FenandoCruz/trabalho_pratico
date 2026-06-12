@@ -128,6 +128,31 @@ header > p {
     border-radius: 4px;
 }
 
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.avatar {
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent-blue);
+    box-shadow: var(--shadow-sm);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 280px;
+}
+
 /* ============================================
    SEÇÕES (GRID LAYOUT)
    ============================================ */
