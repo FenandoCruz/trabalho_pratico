@@ -1,4 +1,5 @@
 <?php
+// cSpell:language pt-BR
 /**
  * Arquivo de processamento de formulário de contato
  * Recebe dados via POST e exibe confirmação
