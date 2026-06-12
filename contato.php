@@ -256,7 +256,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Mensagem de Sucesso -->
                 <div class="alert-success">
                     <h3>✓ Mensagem Enviada com Sucesso!</h3>
-                    <p>Obrigado por entrar em contato conosco. Recebi sua mensagem e responderei em breve.</p>
+                    <p>Obrigado por entrar em contato comigo. Recebi sua mensagem e responderei em breve.</p>
                     
                     <div class="success-details">
                         <p><strong>Nome:</strong> <?php echo htmlspecialchars($nome); ?></p>
